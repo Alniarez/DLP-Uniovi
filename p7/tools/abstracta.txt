@@ -1,0 +1,40 @@
+CATEGORIES
+Definicion, Expresion, Sentencia, Tipo
+
+NODES
+Programa	->	definiciones:Definicion*;
+
+DefVariable:Definicion	->   identificador:String tipo:Tipo;
+
+Campo	->	identificador:String tipo:Tipo;
+
+TipoVoid: Tipo					->	;
+TipoInt:Tipo					->	;
+TipoReal:Tipo					->	;
+TipoChar:Tipo					->	;
+TipoArray:Tipo					->	tam:String tipo:Tipo;
+TipoFuncion:Tipo				->	parametros:Definicion* tipoRetorno:Tipo  defLocales:Definicion* sentencias:Sentencia*; 
+TipoStruct:Tipo					->	campos:Campo*;
+TipoComplejo:Tipo				->	nombreTipo:String;
+
+SentenciaAsignacion:Sentencia	->	 left:Expresion right:Expresion;
+SentenciaWrite:Sentencia		->	 expresion:Expresion*;
+SentenciaRead:Sentencia			->	 expresion:Expresion;
+SentenciaReturn:Sentencia		->	 expresion:Expresion*;
+SentenciaWhile:Sentencia		->	 condicion:Expresion sentencias:Sentencia*;
+SentenciaIf:Sentencia			->	 condicion:Expresion sentenciasIf:Sentencia* sentenciasElse:Sentencia*;
+SentenciaProcedimiento:Sentencia			->	 identificador:String entrada:Expresion*;
+
+ExpresionCast:Expresion			->	 tipo:Tipo expresion:Expresion;
+ExpresionChar:Expresion					->	 tipo:Tipo value:String;
+ExpresionInt:Expresion					->	 tipo:Tipo value:String;
+ExpresionReal:Expresion					->	 tipo:Tipo value:String;
+ExpresionAritmetica:Expresion				->	 left:Expresion symbol:String right:Expresion;
+ExpresionVariable:Expresion		->	 variable:String;
+ExpresionAccesoArray:Expresion	->	 expresion1:Expresion expresion2:Expresion;
+ExpresionAccesoCampo:Expresion	->	 expresion:Expresion nombre:String;
+ExpresionLlamadaFuncion:Expresion			->	 identificador:String entrada:Expresion*;
+ExpresionComparacion:Expresion			->	 left:Expresion symbol:String right:Expresion;
+ExpresionLogica:Expresion					->	 left:Expresion symbol:String right:Expresion;
+ExpresionNegacion:Expresion				->	 expresion:Expresion;
+ExpresionMenosUnario:Expresion			->	 expresion:Expresion;

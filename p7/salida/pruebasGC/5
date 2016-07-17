@@ -1,0 +1,38 @@
+struct Coordenada{
+	x:int;
+	y:int;
+};
+struct triangulo{
+	esquina:[3]Coordenada;
+};
+
+var figuras:[5]triangulo;
+
+main() {
+	var i:int;
+	var ii:int;
+	
+	i=0;
+	ii = 0;
+	
+	while(i<5){
+		while(ii<3){
+			read figuras[i].esquina[ii].x;
+			read figuras[i].esquina[ii].y;
+			ii = 1 + ii;
+		}	
+		i = i+1;
+	}
+	
+	i=0;
+	ii = i;
+	while(i<5){
+		while(ii<3){
+			write figuras[i].esquina[ii].x;
+			write figuras[i].esquina[ii].y;
+			ii = 1 + ii;
+		}	
+		i = i+1;
+	}
+	
+} 

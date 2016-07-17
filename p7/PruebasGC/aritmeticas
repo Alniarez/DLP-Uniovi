@@ -1,0 +1,36 @@
+var a1:int;
+var a2:int;
+var a3:real;
+var a4:char;
+
+main(){
+	a3=5.5;
+	a4='=';
+
+	read a1;
+	read a2;
+	
+	write (a1+a2);
+	write (a1+a1-a1);
+	
+	write (a1*a1);
+	
+	//write (a1*-1);
+	
+	write (a2/a1);
+	
+	write (a2%a1);
+	
+	write (a1%2);
+
+	write (a1+cast<int>(2.0));
+	write (a2+cast<int>(a3));
+	write (a2+cast<int>('1'));
+	write (a1+cast<int>(a4));
+	
+	write (a3 + cast<real>(a1));
+	
+
+
+
+}

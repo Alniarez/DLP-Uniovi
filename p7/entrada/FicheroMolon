@@ -1,0 +1,38 @@
+var caracter:char;
+var entero:int;
+var decimal:real;
+
+struct Trapecio{
+	lado1:int;
+	lado2:int;
+	lado3:int;
+	lado4:int;
+};
+
+var figura1:Trapecio;
+
+var coleccionCaracteres:[10]char;
+var coleccionEnteros:[10]int;
+var coleccionReales:[10]float;
+var coleccionFiguras:[10]Trapecio;
+
+
+
+
+doble(numero:int): int{
+	return 2*numero;
+}
+
+escribeNumero(numero:int){
+	write numero;
+}
+
+main(){
+	
+}
+
+funcionChorra(caracter:char, entero:int, decimal:real){
+	var caracter2:char;
+	var entero2:int;
+	var decimal2:real;
+}

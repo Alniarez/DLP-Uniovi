@@ -1,0 +1,48 @@
+<html>
+<head>
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #888888; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Programa &rarr;                                        <span class="pos">1:1  5:12    </span><span class="sourceText"></span><span class="posText">main(){</span><span class="sourceText"> ... </span><span class="posText">entero =</span><span class="sourceText"> 10;</span>
+<span class="dots">·  </span>definiciones  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">1:1  5:12    </span><span class="sourceText"></span><span class="posText">main(){</span><span class="sourceText"> ... </span><span class="posText">entero =</span><span class="sourceText"> 10;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">main</span>"  
+<span class="dots">·  ·  ·  </span>TipoFuncion &rarr;                            <span class="pos">2:6  5:12    </span><span class="sourceText">v</span><span class="posText">ar entero:int;</span><span class="sourceText"> ... </span><span class="posText">entero =</span><span class="sourceText"> 10;</span>
+<span class="dots">·  ·  ·  ·  </span>parametros  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoVoid</span> &rarr;                            <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>defLocales  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">2:6  2:11    </span><span class="sourceText">v</span><span class="posText">ar ent</span><span class="sourceText">ero:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">entero</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">3:6  3:12    </span><span class="sourceText">v</span><span class="posText">ar ente</span><span class="sourceText">ro2:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">entero2</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>sentencias  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaAsignacion &rarr;              <span class="pos">5:2  5:12    </span><span class="sourceText"></span><span class="posText">   entero =</span><span class="sourceText"> 10;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">entero</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">5:2  5:7     </span><span class="sourceText"></span><span class="posText">   ent</span><span class="sourceText">ero = 10;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;                  <span class="pos">5:11  5:12   </span><span class="sourceText">entero</span><span class="posText"> =</span><span class="sourceText"> 10;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">10</span>"  
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>

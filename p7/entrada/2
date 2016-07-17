@@ -1,0 +1,15 @@
+retornachar():char{
+}
+
+retornaint():int{
+}
+retornaDoble():float{
+}
+
+
+main() {
+	var local:int;
+	retornachar();
+	retornaint();
+	retornaDoble();
+}

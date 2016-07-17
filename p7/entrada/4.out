@@ -1,0 +1,43 @@
+#source "entrada/4"
+
+call main
+halt
+
+#var a:byte
+
+#var b:int
+
+#var c:float
+
+
+main:
+#func main
+#ret void
+enter 0
+
+#line 5
+push 0
+inb
+storeb
+
+#line 6
+push 1
+ini
+storei
+
+#line 7
+push 3
+inf
+storef
+
+#line 8
+push 1
+loadi
+outi
+
+#line 9
+push 3
+loadf
+outf
+ret 0, 0, 0
+

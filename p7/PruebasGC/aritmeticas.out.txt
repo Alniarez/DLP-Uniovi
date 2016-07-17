@@ -1,0 +1,133 @@
+#source "aritmeticas"
+
+call main
+halt
+
+#var a1:int
+
+#var a2:int
+
+#var a3:float
+
+#var a4:byte
+
+
+main:
+#func main
+#ret void
+enter 0
+
+#line 7
+push 4
+pushf 5.5
+storef
+
+#line 8
+push 8
+pushb 61
+storeb
+
+#line 10
+push 0
+ini
+storei
+
+#line 11
+push 2
+ini
+storei
+
+#line 13
+push 0
+loadi
+push 2
+loadi
+addi
+outi
+
+#line 14
+push 0
+loadi
+push 0
+loadi
+addi
+push 0
+loadi
+subi
+outi
+
+#line 16
+push 0
+loadi
+push 0
+loadi
+muli
+outi
+
+#line 20
+push 2
+loadi
+push 0
+loadi
+divi
+outi
+
+#line 22
+push 2
+loadi
+push 0
+loadi
+modi
+outi
+
+#line 24
+push 0
+loadi
+pushi 2
+modi
+outi
+
+#line 26
+push 0
+loadi
+pushf 2.0
+f2i
+addi
+outi
+
+#line 27
+push 2
+loadi
+push 4
+loadf
+f2i
+addi
+outi
+
+#line 28
+push 2
+loadi
+pushb 49
+b2i
+addi
+outi
+
+#line 29
+push 0
+loadi
+push 8
+loadb
+b2i
+addi
+outi
+
+#line 31
+push 4
+loadf
+push 0
+loadi
+i2f
+addf
+outf
+ret 0, 0, 0
+

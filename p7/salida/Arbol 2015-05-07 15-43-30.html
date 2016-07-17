@@ -1,0 +1,133 @@
+<html>
+<head>
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #888888; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Programa &rarr;                                        <span class="pos">1:1  18:9    </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  </span>definiciones  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">1:1  18:9    </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">main</span>"  
+<span class="dots">·  ·  ·  </span>TipoFuncion &rarr;                            <span class="pos">2:5  18:9    </span><span class="sourceText"></span><span class="posText">if(1<2){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  </span>parametros  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoVoid</span> &rarr;                            <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>defLocales  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span>sentencias  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">2:5  3:9     </span><span class="sourceText"></span><span class="posText">if(1<2){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">2:5  2:7     </span><span class="sourceText"></span><span class="posText">if(</span><span class="sourceText">1<2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">2:5  2:5     </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1<2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value"><</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">2:7  2:7     </span><span class="sourceText">if</span><span class="posText">(</span><span class="sourceText">1<2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">2</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">3:9  3:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">3:9  3:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">5:5  6:9     </span><span class="sourceText"></span><span class="posText">if(1>2){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">5:5  5:7     </span><span class="sourceText"></span><span class="posText">if(</span><span class="sourceText">1>2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">5:5  5:5     </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1>2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">></span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">5:7  5:7     </span><span class="sourceText">if</span><span class="posText">(</span><span class="sourceText">1>2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">2</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">6:9  6:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">6:9  6:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">0</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">8:5  9:9     </span><span class="sourceText"></span><span class="posText">if(1==1){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">8:5  8:8     </span><span class="sourceText"></span><span class="posText">if(1</span><span class="sourceText">==1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">8:5  8:5     </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1==1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">==</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">8:8  8:8     </span><span class="sourceText">if(</span><span class="posText">1</span><span class="sourceText">==1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">9:9  9:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">9:9  9:9     </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">11:5  12:9   </span><span class="sourceText"></span><span class="posText">if(1!=1){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">11:5  11:8   </span><span class="sourceText"></span><span class="posText">if(1</span><span class="sourceText">!=1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">11:5  11:5   </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1!=1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">!=</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">11:8  11:8   </span><span class="sourceText">if(</span><span class="posText">1</span><span class="sourceText">!=1){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">12:9  12:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">12:9  12:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">0</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">14:5  15:9   </span><span class="sourceText"></span><span class="posText">if(1<=2){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">14:5  14:8   </span><span class="sourceText"></span><span class="posText">if(1</span><span class="sourceText"><=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">14:5  14:5   </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1<=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value"><=</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">14:8  14:8   </span><span class="sourceText">if(</span><span class="posText">1</span><span class="sourceText"><=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">2</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">15:9  15:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">15:9  15:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">17:5  18:9   </span><span class="sourceText"></span><span class="posText">if(1>=2){</span><span class="sourceText"> ... </span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">17:5  17:8   </span><span class="sourceText"></span><span class="posText">if(1</span><span class="sourceText">>=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">17:5  17:5   </span><span class="sourceText"></span><span class="posText">i</span><span class="sourceText">f(1>=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">>=</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">17:8  17:8   </span><span class="sourceText">if(</span><span class="posText">1</span><span class="sourceText">>=2){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">2</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">18:9  18:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;         <span class="pos">18:9  18:9   </span><span class="sourceText"></span><span class="posText">w</span><span class="sourceText">rite 0;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;           <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">0</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>

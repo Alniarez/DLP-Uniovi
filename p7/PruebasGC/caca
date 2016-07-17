@@ -1,0 +1,12 @@
+struct punto{
+	x:int;
+};
+
+var p1:punto;
+var p2:punto;
+
+main(){
+
+	write p1+p2;
+
+}

@@ -1,0 +1,116 @@
+#source "retornos"
+
+call main
+halt
+
+#var varsuassadasrilla:int
+
+
+entero:
+#func entero
+#ret int
+#local varsasdasdurilla2:int
+enter 2
+
+#line 4
+#line 4
+pushi 5
+ret 2, 2, 0
+
+#var varsurasdsadilla5:int
+
+#var varsurillasdsada55:int
+
+
+decimal:
+#func decimal
+#ret float
+#local vars65urilla:int
+enter 2
+
+#line 10
+#line 10
+pushf 55.6966
+ret 4, 2, 0
+
+
+caracter:
+#func caracter
+#ret byte
+#local varsurill65a:int
+enter 2
+
+#line 15
+#line 15
+pushb 57
+ret 1, 2, 0
+
+
+enteroApartirDefuncion:
+#func enteroApartirDefuncion
+#param varsurilla98:int
+#ret int
+enter 0
+
+#line 19
+#line 19
+call entero
+ret 2, 0, 2
+
+
+enteroApartirDefuncion1:
+#func enteroApartirDefuncion1
+#ret int
+enter 0
+
+#line 23
+#line 23
+pushi 0
+call enteroApartirDefuncion
+ret 2, 0, 0
+
+
+enteroApartirDefuncion2:
+#func enteroApartirDefuncion2
+#ret int
+enter 0
+
+#line 27
+#line 27
+call enteroApartirDefuncion1
+ret 2, 0, 0
+
+
+enteroApartirDefuncion3:
+#func enteroApartirDefuncion3
+#ret int
+enter 0
+
+#line 31
+#line 31
+call enteroApartirDefuncion2
+ret 2, 0, 0
+
+
+main:
+#func main
+#ret void
+enter 0
+
+#line 37
+call entero
+outi
+
+#line 38
+call caracter
+outb
+
+#line 39
+call decimal
+outf
+
+#line 41
+call enteroApartirDefuncion3
+outi
+ret 0, 0, 0
+

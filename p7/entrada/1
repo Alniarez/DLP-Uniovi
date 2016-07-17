@@ -1,0 +1,78 @@
+var a:char;
+var b:int;
+var c:float;
+var d:Persona;
+var e:Coche;
+var f:[1]char;
+var g:[1][2]char;
+var h:[1][2][3]char;
+var i:[1]Persona;
+var j:[1][2]Persona;
+var k:[1][2][3]Persona;
+
+var a:int;
+var b:char;
+
+var c:[20] int;
+var h:[30][20] float;
+
+// ------------- 
+struct Persona {
+	edad:int;
+	meses:[12] int;
+};
+
+var e1:Persona;
+var e2:Persona;
+
+var f:[10] Persona;
+
+struct Empresa {
+	cif:[20] char;
+	empleados:[25] Persona;
+};
+
+var microsoft: Empresa;
+
+// ------------- 
+
+dobleSuma(a:int, b:int): int {
+	var local:int;
+
+	local = a + b;
+	return local * 2;
+}
+
+
+escribeEdad(num:int) {
+	print microsoft;
+}
+
+var z:int;
+
+main() {
+  var local: int;
+  var pepe: Persona;
+  var v:[20] int;
+
+  pepe = 20;
+  read pepe;
+
+  local = 0;
+  while (local < 10) {
+    v[local] = dobleSuma(cast<int>(2.0 + h[0][3]), local);
+    local = local + 1;
+  }
+
+  if (a >= 2 && local < 5) {
+    escribeEdad(a+local); 
+	return;
+  } else {
+    b = 'R';
+  }
+
+  if (z != 2) {
+    escribe(meses[2]);
+  }
+}
+

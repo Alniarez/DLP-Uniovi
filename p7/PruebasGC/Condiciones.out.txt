@@ -1,0 +1,204 @@
+#source "Condiciones"
+
+call main
+halt
+
+#var e1:int
+
+
+main:
+#func main
+#ret void
+#local e2:int
+enter 2
+
+#line 31
+push 0
+ini
+storei
+
+#line 32
+pusha BP
+push -2
+add
+ini
+storei
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+gti
+
+jnz et1
+jmp et2
+et1:
+
+#line 35
+pushi 1
+outi
+et2:
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+gei
+
+jnz et3
+jmp et4
+et3:
+
+#line 38
+pushi 2
+outi
+et4:
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+lti
+
+jnz et5
+jmp et6
+et5:
+
+#line 41
+pushi 3
+outi
+et6:
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+lei
+
+jnz et7
+jmp et8
+et7:
+
+#line 44
+pushi 4
+outi
+et8:
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+lei
+not
+
+jnz et9
+
+#line 49
+pushi 6
+outi
+jmp et10
+et9:
+
+#line 47
+pushi 5
+outi
+et10:
+push 0
+loadi
+push 0
+loadi
+addi
+push 0
+loadi
+lti
+
+jnz et11
+jmp et12
+et11:
+
+#line 52
+pushi 7
+outi
+et12:
+push 0
+loadi
+pusha BP
+push -2
+add
+loadi
+nei
+
+jnz et13
+jmp et14
+et13:
+
+#line 55
+pushi 8
+outi
+et14:
+push 0
+loadi
+push 0
+loadi
+eqi
+
+jnz et15
+jmp et16
+et15:
+
+#line 58
+pushi 9
+outi
+et16:
+push 0
+loadi
+pushi 1
+gti
+pusha BP
+push -2
+add
+loadi
+pushi 6
+gti
+pusha BP
+push -2
+add
+loadi
+pushi 20
+lti
+or
+and
+
+jnz et17
+jmp et18
+et17:
+
+#line 61
+pushi 10
+outi
+et18:
+push 0
+loadi
+pushi 10
+gti
+push 0
+loadi
+pushi 20
+lti
+or
+
+jnz et19
+jmp et20
+et19:
+
+#line 64
+pushi 11
+outi
+et20:
+ret 0, 2, 0
+

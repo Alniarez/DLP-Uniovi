@@ -1,0 +1,29 @@
+main(){
+	var i : int;
+	var j : int;
+
+	
+	i = 0;
+	j = 15;
+	while (i<10){
+		write i;
+		i = 1 + i;
+	} // 0 a 9
+	while (i<=10){
+		write i;
+		i = 1 + i;
+	} // 10
+	while (j>10){
+		write j;
+		j = j - 1;
+	} // 15 a 11
+	
+	while (j>=10){
+		write j;
+		j = 1 - j;
+	} // 10
+	
+	
+	
+	
+}

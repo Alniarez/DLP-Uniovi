@@ -1,0 +1,37 @@
+#source "entrada/2"
+
+call main
+halt
+
+
+retornachar:
+#func retornachar
+#ret byte
+enter 0
+
+
+retornaint:
+#func retornaint
+#ret int
+enter 0
+
+
+retornaDoble:
+#func retornaDoble
+#ret float
+enter 0
+
+
+main:
+#func main
+#ret void
+#local local:int
+enter 2
+call retornachar
+popb
+call retornaint
+popi
+call retornaDoble
+popf
+ret 0, 2, 0
+

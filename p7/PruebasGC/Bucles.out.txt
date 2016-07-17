@@ -1,0 +1,140 @@
+#source "Bucles y condiciones"
+
+call main
+halt
+
+
+main:
+#func main
+#ret void
+#local i:int
+#local j:int
+enter 4
+
+#line 4
+pusha BP
+push -2
+add
+pushi 0
+storei
+
+#line 5
+pusha BP
+push -4
+add
+pushi 15
+storei
+et1:
+pusha BP
+push -2
+add
+loadi
+pushi 10
+lti
+jz et11
+
+#line 8
+pusha BP
+push -2
+add
+loadi
+outi
+
+#line 9
+pusha BP
+push -2
+add
+pushi 1
+pusha BP
+push -2
+add
+loadi
+addi
+storei
+jmp et1
+et11:et3:
+pusha BP
+push -2
+add
+loadi
+pushi 10
+lei
+jz et31
+
+#line 13
+pusha BP
+push -2
+add
+loadi
+outi
+
+#line 14
+pusha BP
+push -2
+add
+pushi 1
+pusha BP
+push -2
+add
+loadi
+addi
+storei
+jmp et3
+et31:et5:
+pusha BP
+push -4
+add
+loadi
+pushi 10
+gti
+jz et51
+
+#line 18
+pusha BP
+push -4
+add
+loadi
+outi
+
+#line 19
+pusha BP
+push -4
+add
+pusha BP
+push -4
+add
+loadi
+pushi 1
+subi
+storei
+jmp et5
+et51:et7:
+pusha BP
+push -4
+add
+loadi
+pushi 10
+gei
+jz et71
+
+#line 23
+pusha BP
+push -4
+add
+loadi
+outi
+
+#line 24
+pusha BP
+push -4
+add
+pushi 1
+pusha BP
+push -4
+add
+loadi
+subi
+storei
+jmp et7
+et71:ret 0, 4, 0
+

@@ -1,0 +1,232 @@
+#source "5"
+
+call main
+halt
+
+#type Coordenada:	{
+	x:int
+	y:int
+}
+
+#type triangulo:	{
+	esquina:3*Coordenada
+}
+
+#var figuras:5*triangulo
+
+
+main:
+#func main
+#ret void
+#local i:int
+#local ii:int
+enter 4
+
+#line 15
+pusha BP
+push -2
+add
+pushi 0
+storei
+
+#line 16
+pusha BP
+push -4
+add
+pushi 0
+storei
+et1:
+pusha BP
+push -2
+add
+loadi
+pushi 5
+lti
+jz et11
+et3:
+pusha BP
+push -4
+add
+loadi
+pushi 3
+lti
+jz et31
+
+#line 20
+push 16
+pusha BP
+push -2
+add
+loadi
+push 12
+mul
+add
+push 0
+add
+pusha BP
+push -4
+add
+loadi
+push 4
+mul
+add
+push 0
+add
+ini
+storei
+
+#line 21
+push 16
+pusha BP
+push -2
+add
+loadi
+push 12
+mul
+add
+push 0
+add
+pusha BP
+push -4
+add
+loadi
+push 4
+mul
+add
+push 2
+add
+ini
+storei
+
+#line 22
+pusha BP
+push -4
+add
+pushi 1
+pusha BP
+push -4
+add
+loadi
+addi
+storei
+jmp et3
+et31:
+#line 24
+pusha BP
+push -2
+add
+pusha BP
+push -2
+add
+loadi
+pushi 1
+addi
+storei
+jmp et1
+et11:
+#line 27
+pusha BP
+push -2
+add
+pushi 0
+storei
+
+#line 28
+pusha BP
+push -4
+add
+pusha BP
+push -2
+add
+loadi
+storei
+et5:
+pusha BP
+push -2
+add
+loadi
+pushi 5
+lti
+jz et51
+et7:
+pusha BP
+push -4
+add
+loadi
+pushi 3
+lti
+jz et71
+
+#line 31
+push 16
+pusha BP
+push -2
+add
+loadi
+push 12
+mul
+add
+push 0
+add
+pusha BP
+push -4
+add
+loadi
+push 4
+mul
+add
+push 0
+add
+loadi
+outi
+
+#line 32
+push 16
+pusha BP
+push -2
+add
+loadi
+push 12
+mul
+add
+push 0
+add
+pusha BP
+push -4
+add
+loadi
+push 4
+mul
+add
+push 2
+add
+loadi
+outi
+
+#line 33
+pusha BP
+push -4
+add
+pushi 1
+pusha BP
+push -4
+add
+loadi
+addi
+storei
+jmp et7
+et71:
+#line 35
+pusha BP
+push -2
+add
+pusha BP
+push -2
+add
+loadi
+pushi 1
+addi
+storei
+jmp et5
+et51:ret 0, 4, 0
+

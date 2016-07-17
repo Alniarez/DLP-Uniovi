@@ -1,0 +1,101 @@
+<html>
+<head>
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #888888; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Programa &rarr;                                        <span class="pos">1:5  23:4    </span><span class="sourceText">var </span><span class="posText">x:int;</span><span class="sourceText"> ... </span><span class="posText">main</span><span class="sourceText">(){</span>
+<span class="dots">·  </span>definiciones  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">1:5  1:5     </span><span class="sourceText">var </span><span class="posText">x</span><span class="sourceText">:int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">x</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                                <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">2:5  2:6     </span><span class="sourceText">var </span><span class="posText">xx</span><span class="sourceText">:char;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">xx</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                               <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">3:5  3:7     </span><span class="sourceText">var </span><span class="posText">xxx</span><span class="sourceText">:float;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">xxx</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoReal</span> &rarr;                               <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">5:8  9:11    </span><span class="sourceText">struct </span><span class="posText">punto{</span><span class="sourceText"> ... </span><span class="posText">aa:[20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">punto</span>"  
+<span class="dots">·  ·  ·  </span>TipoStruct &rarr;                             <span class="pos">6:2  9:11    </span><span class="sourceText"></span><span class="posText">x:int;</span><span class="sourceText"> ... </span><span class="posText">aa:[20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  </span>campos  <span class="type">List&lt;Campo&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">6:2  6:2     </span><span class="sourceText"></span><span class="posText">x</span><span class="sourceText">:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">x</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">7:2  7:2     </span><span class="sourceText"></span><span class="posText">y</span><span class="sourceText">:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">y</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">8:2  8:6     </span><span class="sourceText"></span><span class="posText">a:[20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">a</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>TipoArray &rarr;                     <span class="pos">8:5  8:6     </span><span class="sourceText">a:[</span><span class="posText">20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">9:2  9:11    </span><span class="sourceText"></span><span class="posText">aa:[20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">aa</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>TipoArray &rarr;                     <span class="pos">9:6  9:11    </span><span class="sourceText">aa:[</span><span class="posText">20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>TipoArray &rarr;                  <span class="pos">9:10  9:11   </span><span class="sourceText">aa:[20][</span><span class="posText">20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">12:5  12:11  </span><span class="sourceText">var </span><span class="posText">p:punto</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">p</span>"  
+<span class="dots">·  ·  ·  </span>"<span class="value">punto</span>"  <span class="type">TipoComplejo.nombreTipo</span>         <span class="pos">12:7  12:11  </span><span class="sourceText">var p:</span><span class="posText">punto</span><span class="sourceText">;</span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">14:5  14:9   </span><span class="sourceText">var </span><span class="posText">a:[20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">a</span>"  
+<span class="dots">·  ·  ·  </span>TipoArray &rarr;                              <span class="pos">14:8  14:9   </span><span class="sourceText">var a:[</span><span class="posText">20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                             <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">15:5  15:14  </span><span class="sourceText">var </span><span class="posText">aa:[20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">aa</span>"  
+<span class="dots">·  ·  ·  </span>TipoArray &rarr;                              <span class="pos">15:9  15:14  </span><span class="sourceText">var aa:[</span><span class="posText">20][20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  </span>TipoArray &rarr;                           <span class="pos">15:13  15:14 </span><span class="sourceText">var aa:[20][</span><span class="posText">20</span><span class="sourceText">]int;</span>
+<span class="dots">·  ·  ·  ·  ·  </span>"<span class="value">20</span>"  
+<span class="dots">·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                          <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">17:1  20:8   </span><span class="sourceText"></span><span class="posText">main2(param1:char):int{</span><span class="sourceText"> ... </span><span class="posText">return 2</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">main2</span>"  
+<span class="dots">·  ·  ·  </span>TipoFuncion &rarr;                            <span class="pos">17:7  20:8   </span><span class="sourceText">main2(</span><span class="posText">param1:char):int{</span><span class="sourceText"> ... </span><span class="posText">return 2</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  ·  </span>parametros  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">17:7  17:12  </span><span class="sourceText">main2(</span><span class="posText">param1</span><span class="sourceText">:char):int{</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">param1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                      <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                             <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>defLocales  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">18:5  18:10  </span><span class="sourceText">var </span><span class="posText">local1</span><span class="sourceText">:char;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">local1</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                      <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>sentencias  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaReturn &rarr;                  <span class="pos">20:8  20:8   </span><span class="sourceText">return </span><span class="posText">2</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">20:8  20:8   </span><span class="sourceText">return </span><span class="posText">2</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">2</span>"  
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">23:1  23:4   </span><span class="sourceText"></span><span class="posText">main</span><span class="sourceText">(){</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">main</span>"  
+<span class="dots">·  ·  ·  </span>TipoFuncion &rarr;                            <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>parametros  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoVoid</span> &rarr;                            <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>defLocales  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span>sentencias  <span class="type">List&lt;Sentencia&gt;</span> = 
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>

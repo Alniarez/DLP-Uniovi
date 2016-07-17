@@ -1,0 +1,42 @@
+var varsuassadasrilla:int;
+entero():int{
+	var varsasdasdurilla2:int;
+	return 5;
+}
+var varsurasdsadilla5:int;
+var varsurillasdsada55:int;
+decimal():float{
+	var vars65urilla:int;
+	return 55.6966;
+}
+
+caracter():char{
+	var varsurill65a:int;
+	return '9';
+}
+
+enteroApartirDefuncion(varsurilla98:int):int{
+	return entero();
+}
+
+enteroApartirDefuncion1():int{
+	return enteroApartirDefuncion(0);
+}
+
+enteroApartirDefuncion2():int{
+	return enteroApartirDefuncion1();
+}
+
+enteroApartirDefuncion3():int{
+	return enteroApartirDefuncion2();
+}
+
+
+
+main(){
+	write entero();
+	write caracter();
+	write decimal();
+	
+	write enteroApartirDefuncion3();
+}

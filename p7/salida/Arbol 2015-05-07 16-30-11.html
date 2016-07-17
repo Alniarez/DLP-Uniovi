@@ -1,0 +1,113 @@
+<html>
+<head>
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #888888; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Programa &rarr;                                        <span class="pos">1:5  31:21   </span><span class="sourceText">var </span><span class="posText">caracter:char;</span><span class="sourceText"> ... </span><span class="posText">caracterI = carac</span><span class="sourceText">ter;</span>
+<span class="dots">·  </span>definiciones  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">1:5  1:12    </span><span class="sourceText">var </span><span class="posText">caracter</span><span class="sourceText">:char;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">caracter</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                               <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">2:5  2:10    </span><span class="sourceText">var </span><span class="posText">entero</span><span class="sourceText">:int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">entero</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                                <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">3:5  3:11    </span><span class="sourceText">var </span><span class="posText">decimal</span><span class="sourceText">:real;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">decimal</span>"  
+<span class="dots">·  ·  ·  </span><span class="value">TipoReal</span> &rarr;                               <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">5:8  7:2     </span><span class="sourceText">struct </span><span class="posText">Coordenada{</span><span class="sourceText"> ... </span><span class="posText"></span><span class="sourceText">  y:int;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">Coordenada</span>"  
+<span class="dots">·  ·  ·  </span>TipoStruct &rarr;                             <span class="pos">6:2  7:2     </span><span class="sourceText"></span><span class="posText">   x:int;</span><span class="sourceText"> ... </span><span class="posText"></span><span class="sourceText">  y:int;</span>
+<span class="dots">·  ·  ·  ·  </span>campos  <span class="type">List&lt;Campo&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">6:2  6:2     </span><span class="sourceText"></span><span class="posText"> </span><span class="sourceText">  x:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">x</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">7:2  7:2     </span><span class="sourceText"></span><span class="posText"> </span><span class="sourceText">  y:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">y</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">10:8  11:23  </span><span class="sourceText">struct </span><span class="posText">triangulo{</span><span class="sourceText"> ... </span><span class="posText">esquinas:[3]Coorden</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">triangulo</span>"  
+<span class="dots">·  ·  ·  </span>TipoStruct &rarr;                             <span class="pos">11:2  11:23  </span><span class="sourceText"></span><span class="posText">   esquinas:[3]Coorden</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  ·  </span>campos  <span class="type">List&lt;Campo&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>Campo &rarr;                            <span class="pos">11:2  11:23  </span><span class="sourceText"></span><span class="posText">   esquinas:[3]Coorden</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">esquinas</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>TipoArray &rarr;                     <span class="pos">11:12  11:23 </span><span class="sourceText">esquina</span><span class="posText">s:[3]Coorden</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">3</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">Coordenada</span>"  <span class="type">TipoComplejo.nombreTipo</span><span class="pos">11:14  11:23 </span><span class="sourceText">esquinas:</span><span class="posText">[3]Coorden</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">14:5  14:27  </span><span class="sourceText">var </span><span class="posText">localizacion:Coordenada</span><span class="sourceText">;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">localizacion</span>"  
+<span class="dots">·  ·  ·  </span>"<span class="value">Coordenada</span>"  <span class="type">TipoComplejo.nombreTipo</span>    <span class="pos">14:18  14:27 </span><span class="sourceText">var localizacion:</span><span class="posText">Coordenada</span><span class="sourceText">;</span>
+<span class="dots">·  ·  </span>DefVariable &rarr;                               <span class="pos">16:1  31:21  </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">caracterI = carac</span><span class="sourceText">ter;</span>
+<span class="dots">·  ·  ·  </span>"<span class="value">main</span>"  
+<span class="dots">·  ·  ·  </span>TipoFuncion &rarr;                            <span class="pos">17:6  31:21  </span><span class="sourceText">v</span><span class="posText">ar entrada:int;</span><span class="sourceText"> ... </span><span class="posText">caracterI = carac</span><span class="sourceText">ter;</span>
+<span class="dots">·  ·  ·  ·  </span>parametros  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  </span><span class="value">TipoVoid</span> &rarr;                            <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>defLocales  <span class="type">List&lt;Definicion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">17:6  17:12  </span><span class="sourceText">v</span><span class="posText">ar entr</span><span class="sourceText">ada:int;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">entrada</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                       <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  </span>DefVariable &rarr;                      <span class="pos">18:6  18:14  </span><span class="sourceText">v</span><span class="posText">ar caract</span><span class="sourceText">erI:char;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">caracterI</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                      <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  </span>sentencias  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaRead &rarr;                    <span class="pos">19:7  19:13  </span><span class="sourceText">re</span><span class="posText">ad entr</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">entrada</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">19:7  19:13  </span><span class="sourceText">re</span><span class="posText">ad entr</span><span class="sourceText">ada;</span>
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaIf &rarr;                      <span class="pos">21:5  24:11  </span><span class="sourceText"></span><span class="posText">if(entrada<10){</span><span class="sourceText"> ... </span><span class="posText">wri</span><span class="sourceText">te '+';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionComparacion &rarr;          <span class="pos">21:5  21:14  </span><span class="sourceText"></span><span class="posText">if(entrada</span><span class="sourceText"><10){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">entrada</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">21:5  21:11  </span><span class="sourceText"></span><span class="posText">if(entr</span><span class="sourceText">ada<10){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value"><</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">21:13  21:14 </span><span class="sourceText">if(entra</span><span class="posText">da</span><span class="sourceText"><10){</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">10</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasIf  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">22:9  22:11  </span><span class="sourceText"></span><span class="posText">wri</span><span class="sourceText">te '-';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionChar &rarr;        <span class="pos">22:9  22:11  </span><span class="sourceText"></span><span class="posText">wri</span><span class="sourceText">te '-';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;          <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">'-'</span>"  
+<span class="dots">·  ·  ·  ·  ·  ·  </span>sentenciasElse  <span class="type">List&lt;Sentencia&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;             <span class="pos">24:9  24:11  </span><span class="sourceText"></span><span class="posText">wri</span><span class="sourceText">te '+';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  </span>ExpresionChar &rarr;        <span class="pos">24:9  24:11  </span><span class="sourceText"></span><span class="posText">wri</span><span class="sourceText">te '+';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;          <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">'+'</span>"  
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;                   <span class="pos">27:8  27:8   </span><span class="sourceText">wri</span><span class="posText">t</span><span class="sourceText">e 5;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionInt &rarr;               <span class="pos">27:8  27:8   </span><span class="sourceText">wri</span><span class="posText">t</span><span class="sourceText">e 5;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoInt</span> &rarr;                 <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">5</span>"  
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaWrite &rarr;                   <span class="pos">28:8  28:10  </span><span class="sourceText">wri</span><span class="posText">te </span><span class="sourceText">5.1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>expresion  <span class="type">List&lt;Expresion&gt;</span> = 
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>ExpresionReal &rarr;              <span class="pos">28:8  28:10  </span><span class="sourceText">wri</span><span class="posText">te </span><span class="sourceText">5.1;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoReal</span> &rarr;                <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">5.1</span>"  
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaAsignacion &rarr;              <span class="pos">30:2  30:15  </span><span class="sourceText"></span><span class="posText">   caracter = </span><span class="sourceText">'e';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">caracter</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">30:2  30:9   </span><span class="sourceText"></span><span class="posText">   carac</span><span class="sourceText">ter = 'e';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>ExpresionChar &rarr;                 <span class="pos">30:13  30:15 </span><span class="sourceText">caracter</span><span class="posText"> = </span><span class="sourceText">'e';</span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span><span class="value">TipoChar</span> &rarr;                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">·  ·  ·  ·  ·  ·  ·  </span>"<span class="value">'e'</span>"  
+<span class="dots">·  ·  ·  ·  ·  </span>SentenciaAsignacion &rarr;              <span class="pos">31:2  31:21  </span><span class="sourceText"></span><span class="posText">   caracterI = carac</span><span class="sourceText">ter;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">caracterI</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">31:2  31:10  </span><span class="sourceText"></span><span class="posText">   caract</span><span class="sourceText">erI = caracter;</span>
+<span class="dots">·  ·  ·  ·  ·  ·  </span>"<span class="value">caracter</span>"  <span class="type">ExpresionVariable.variable</span><span class="pos">31:14  31:21 </span><span class="sourceText">caracterI</span><span class="posText"> = carac</span><span class="sourceText">ter;</span>
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>
